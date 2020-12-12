@@ -1,0 +1,23 @@
+@import "../../styles/mixins";
+
+.header-categories {
+  @include flex(null, null, null);
+  list-style: none;
+
+  li {
+    margin-right: 19px;
+    a {
+      font-size: 14px;
+      color: #857f43;
+      text-decoration: none;
+
+      &:visited {
+        color: #857f43;
+      }
+
+      &:hover {
+        color: rgba(51, 51, 51, 0.9);
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.main-section {
+  color: $p-text;
+
+  .products-container {
+    @include products;
+  }
+}

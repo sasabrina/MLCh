@@ -1,0 +1,45 @@
+@import "../../styles/_variables";
+@import "../../styles/_mixins";
+
+.nav-header {
+  height: 100px;
+  background-color: $p-yellow;
+  font-family: "proximanova-regular";
+  padding: 8px 0;
+
+  .nav-header-container {
+    @include flex(null, null, center);
+    @include container-width;
+    height: 100%;
+
+    .MuiGrid-container {
+      height: 100%;
+    }
+    .logo {
+      a {
+        display: block;
+        width: 138px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .search-container,
+    .account-container {
+      @include flex(column, space-between, null);
+    }
+
+    .account-container {
+      align-items: flex-end;
+      figure {
+        width: 340px;
+        margin: 0;
+        img {
+          max-width: 340px;
+        }
+      }
+    }
+  }
+}

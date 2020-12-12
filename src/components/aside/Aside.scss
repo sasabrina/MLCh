@@ -1,0 +1,29 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+aside {
+  font-family: $ff-main-light;
+  font-size: $fs-regular;
+
+  h2 {
+    font-size: $fs-subtitle;
+    margin-bottom: 10px;
+  }
+
+  .categories-container {
+    margin-top: 32px;
+
+    ul {
+      @include clean-list;
+
+      li {
+        a {
+          @include clean-links($p-text);
+          display: block;
+          margin-bottom: 13px;
+          line-height: 0.89;
+        }
+      }
+    }
+  }
+}

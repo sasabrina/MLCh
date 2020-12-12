@@ -1,0 +1,31 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+@font-face {
+  font-family: "proximanova-light";
+  src: url("fonts/proximanova-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "proximanova-regular";
+  src: url("fonts/proximanova-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "proximanova-semibold";
+  src: url("fonts/proximanova-semibold.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $p-gray;
+}
+
+.MuiGrid-container {
+  @include container-width;
+}

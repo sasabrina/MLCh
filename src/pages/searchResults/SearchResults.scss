@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.search-section {
+  .products-container {
+    @include products;
+  }
+}

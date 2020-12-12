@@ -1,0 +1,65 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.shortcuts-section {
+  margin-bottom: 32px;
+  background-color: #fff;
+
+  .shortcuts-container {
+    @include container-width;
+    @include flex(null, null, center);
+    font-family: $ff-main;
+    height: 140px;
+
+    .shortcuts-title {
+      a {
+        @include clean-links($p-text);
+        h1 {
+          font-size: $fs-title;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        span {
+          font-size: $fs-regular;
+        }
+      }
+    }
+
+    .shortcuts-links {
+      height: 100%;
+      @include flex(null, null, center);
+      ul {
+        @include clean-list;
+        @include flex(null, null, null);
+
+        li {
+          @include flex(column, center, center);
+          width: 148px;
+          padding: 0 12px;
+          cursor: pointer;
+
+          figure {
+            width: 48px;
+            img {
+              width: 100%;
+            }
+          }
+
+          p {
+            font-size: $fs-regular;
+            max-width: 100px;
+            margin: 0;
+            text-align: center;
+          }
+
+          &:hover {
+            p {
+              color: $p-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
