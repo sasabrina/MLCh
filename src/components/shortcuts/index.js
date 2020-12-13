@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import ItemsContext from "../../context/itemsContext";
 import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
+import ShortcutItem from "../../components/shortcutItem";
 import "./Shortcuts.scss";
 
 const Shortcuts = () => {
@@ -24,10 +25,7 @@ const Shortcuts = () => {
               {shortcuts &&
                 shortcuts.map((sc, i) => (
                   <li key={i}>
-                    <figure>
-                      <img src={sc.image_src} alt="deals shortcut" />
-                    </figure>
-                    <p>{sc.name}</p>
+                    <ShortcutItem item={sc} />
                   </li>
                 ))}
             </ul>

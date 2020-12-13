@@ -34,30 +34,9 @@
         @include flex(null, null, null);
 
         li {
-          @include flex(column, center, center);
           width: 148px;
           padding: 0 12px;
           cursor: pointer;
-
-          figure {
-            width: 48px;
-            img {
-              width: 100%;
-            }
-          }
-
-          p {
-            font-size: $fs-regular;
-            max-width: 100px;
-            margin: 0;
-            text-align: center;
-          }
-
-          &:hover {
-            p {
-              color: $p-blue;
-            }
-          }
         }
       }
     }
