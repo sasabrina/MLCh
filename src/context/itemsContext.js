@@ -9,6 +9,7 @@ const ItemsProvider = ({ children }) => {
   const [state, setState] = useState([]);
   const [searchItems, setSearchItems] = useState([]);
   const [searchValue, setSearchValue] = useState("");
+  const [totalItems, setTotalItems] = useState(0);
 
   useEffect(() => {
     if (searchValue !== "") {
@@ -23,7 +24,15 @@ const ItemsProvider = ({ children }) => {
 
   return (
     <ItemsContext.Provider
-      value={{ state, searchItems, isLoading, isError, setSearchValue }}
+      value={{
+        state,
+        searchItems,
+        isLoading,
+        isError,
+        setSearchValue,
+        totalItems,
+        setTotalItems,
+      }}
     >
       {children}
     </ItemsContext.Provider>

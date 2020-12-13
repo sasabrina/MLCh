@@ -1,10 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ItemsContext from "../../context/itemsContext";
 import ProductCard from "../../components/productCard";
 import "./Deals.scss";
 
 const Main = () => {
-  const { state, isLoading } = useContext(ItemsContext);
+  const { state, isLoading, setTotalItems } = useContext(ItemsContext);
+
+  useEffect(() => {
+    if (!isLoading && state.items) {
+      setTotalItems(state.items.length);
+    }
+  }, [isLoading, state, setTotalItems]);
 
   return (
     <section className="main-section">

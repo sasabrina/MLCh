@@ -3,7 +3,7 @@ import ItemsContext from "../../context/itemsContext";
 import "./Aside.scss";
 
 const Aside = () => {
-  const { state } = useContext(ItemsContext);
+  const { state, totalItems } = useContext(ItemsContext);
   const { items, available_filters } = state;
 
   return (
@@ -12,7 +12,7 @@ const Aside = () => {
         <aside>
           <div className="totalItems">
             <h2>Todas</h2>
-            <p>{items.length} productos</p>
+            <p>{totalItems} productos</p>
           </div>
 
           <div className="categories-container">

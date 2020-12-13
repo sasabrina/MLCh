@@ -13,7 +13,7 @@ const Shortcuts = () => {
       {state && (
         <Grid container className="shortcuts-container">
           <Grid item xs={3} className="shortcuts-title">
-            <Link to="/">
+            <Link to="/deals">
               <h1>{title}</h1>
               <span>{subtitle}</span>
             </Link>
