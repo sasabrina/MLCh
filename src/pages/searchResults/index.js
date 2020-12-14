@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import ItemsContext from "../../context/itemsContext";
-import ProductCard from "../../components/productCard";
+import ProductsList from "../../components/productsList";
 import "./SearchResults.scss";
 
 const SearchResults = () => {
@@ -12,15 +12,7 @@ const SearchResults = () => {
 
   return (
     <section className="search-section">
-      {searchItems && (
-        <ul className="products-container">
-          {searchItems.map((item) => (
-            <li key={item.id}>
-              <ProductCard item={item} />
-            </li>
-          ))}
-        </ul>
-      )}
+      {searchItems && <ProductsList items={searchItems} canClick={true} />}
     </section>
   );
 };

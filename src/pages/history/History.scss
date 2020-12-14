@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.history-container {
+  @include container-width;
+  font-family: $ff-main;
+  color: $s-gray;
+
+  .history-title {
+    @include flex(null, null, baseline);
+    margin: 48px 0;
+
+    h2 {
+      font-size: $fs-title;
+      font-family: $ff-main-light;
+      margin-right: 16px;
+    }
+
+    p {
+      color: $p-blue;
+      cursor: pointer;
+
+      &:hover {
+        color: $s-blue;
+      }
+    }
+  }
+
+  .history-products {
+    p {
+      font-size: $fs-subtitle;
+    }
+  }
+}

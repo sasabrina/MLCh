@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+// import HistoryContext from "../../context/historyContext";
 import "./ProductCard.scss";
 
 const ProductCard = ({ item }) => {
+  // const { historyActions } = useContext(HistoryContext);
   const { link, image_src, price, free_shipping, title } = item;
+
+  // const addItemToHistory = (event) => {
+  //   event.stopPropagation();
+  //   historyActions.add(item);
+  // };
+
   return (
-    <a href={link.url} className="product">
+    <a
+      href={link.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="product"
+    >
       <figure className="product-img">
         <img src={image_src} alt="product preview" />
       </figure>

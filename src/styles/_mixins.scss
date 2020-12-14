@@ -29,17 +29,3 @@
   color: $p-green;
   font-size: $fs-regular;
 }
-
-@mixin products {
-  @include clean-list;
-  @include flex(null, flex-start, null);
-  flex-wrap: wrap;
-
-  li {
-    width: 284px;
-    background-color: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    margin: 0 8px 16px;
-  }
-}

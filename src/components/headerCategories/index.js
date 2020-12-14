@@ -1,4 +1,5 @@
 import React, { useContext, useState, useCallback, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ItemsContext from "../../context/itemsContext";
 import "./HeaderCategories.scss";
 
@@ -50,7 +51,7 @@ const HeaderCategories = () => {
       {linksState &&
         linksState.map((l, i) => (
           <li key={i}>
-            <a href={l.url}>{l.name}</a>
+            <Link to={l.url}>{l.name}</Link>
           </li>
         ))}
     </ul>

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import ItemsContext from "../../context/itemsContext";
-import ProductCard from "../../components/productCard";
+import ProductsList from "../../components/productsList";
 import "./Deals.scss";
 
 const Main = () => {
@@ -15,15 +15,7 @@ const Main = () => {
   return (
     <section className="main-section">
       {isLoading && <p>Loading</p>}
-      {state.items && (
-        <ul className="products-container">
-          {state.items.map((i) => (
-            <li key={i.id}>
-              <ProductCard item={i} />
-            </li>
-          ))}
-        </ul>
-      )}
+      {state.items && <ProductsList items={state.items} canClick={true} />}
     </section>
   );
 };
