@@ -17,18 +17,14 @@
     }
 
     p {
-      color: $p-blue;
-      cursor: pointer;
-
-      &:hover {
-        color: $s-blue;
-      }
+      @include btn-delete;
     }
   }
 
   .history-products {
     p {
       font-size: $fs-subtitle;
+      margin: 6px;
     }
   }
 }

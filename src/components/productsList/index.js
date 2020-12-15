@@ -3,7 +3,7 @@ import HistoryContext from "../../context/historyContext";
 import ProductCard from "../productCard";
 import "./ProductsList.scss";
 
-function ProductsList({ items, canClick, cardType }) {
+function ProductsList({ items, canClick, listType, cardType }) {
   const { historyActions } = useContext(HistoryContext);
 
   const addItemToHistory = (event, item) => {
@@ -12,7 +12,7 @@ function ProductsList({ items, canClick, cardType }) {
   };
 
   return (
-    <ul className="products-container">
+    <ul className={`products-container ${listType}`}>
       {items.map((i) => (
         <li
           key={i.id}

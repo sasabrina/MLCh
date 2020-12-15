@@ -29,3 +29,12 @@
   color: $p-green;
   font-size: $fs-regular;
 }
+
+@mixin btn-delete {
+  color: $p-blue;
+  cursor: pointer;
+
+  &:hover {
+    color: $s-blue;
+  }
+}

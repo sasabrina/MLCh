@@ -16,11 +16,12 @@ function History() {
       </div>
 
       <div className="history-products">
-        <p>Diciembre</p>
+        {history && history.length > 0 && <p>Diciembre</p>}
         {history && (
           <ProductsList
             items={history}
             canClick={false}
+            listType="history-list"
             cardType="history-card"
           />
         )}

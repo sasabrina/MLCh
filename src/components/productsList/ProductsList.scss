@@ -7,8 +7,6 @@
   flex-wrap: wrap;
 
   li {
-    // width: 284px;
-    background-color: #fff;
     border-radius: 4px;
     overflow: hidden;
     margin: 0 8px 16px;
@@ -17,6 +15,10 @@
     &:hover {
       box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.07),
         0 10px 15px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &.history-list {
+      height: 390px;
     }
   }
 }

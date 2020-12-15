@@ -19,6 +19,7 @@ const Main = () => {
         <ProductsList
           items={state.items}
           canClick={true}
+          listType="regular-list"
           cardType="regular-card"
         />
       )}

@@ -16,6 +16,7 @@ const SearchResults = () => {
         <ProductsList
           items={searchItems}
           canClick={true}
+          listType="regular list"
           cardType="regular-card"
         />
       )}
