@@ -27,4 +27,21 @@
       margin: 6px;
     }
   }
+
+  .no-history {
+    width: 500px;
+    margin: 160px auto;
+    text-align: center;
+
+    h2 {
+      font-size: $fs-title;
+      font-weight: normal;
+      font-family: $ff-main-light;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
 }
