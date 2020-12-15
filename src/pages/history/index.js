@@ -17,7 +17,13 @@ function History() {
 
       <div className="history-products">
         <p>Diciembre</p>
-        {history && <ProductsList items={history} canClick={false} />}
+        {history && (
+          <ProductsList
+            items={history}
+            canClick={false}
+            cardType="history-card"
+          />
+        )}
       </div>
     </section>
   );

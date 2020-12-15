@@ -15,7 +15,13 @@ const Main = () => {
   return (
     <section className="main-section">
       {isLoading && <p>Loading</p>}
-      {state.items && <ProductsList items={state.items} canClick={true} />}
+      {state.items && (
+        <ProductsList
+          items={state.items}
+          canClick={true}
+          cardType="regular-card"
+        />
+      )}
     </section>
   );
 };

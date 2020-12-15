@@ -12,7 +12,13 @@ const SearchResults = () => {
 
   return (
     <section className="search-section">
-      {searchItems && <ProductsList items={searchItems} canClick={true} />}
+      {searchItems && (
+        <ProductsList
+          items={searchItems}
+          canClick={true}
+          cardType="regular-card"
+        />
+      )}
     </section>
   );
 };
