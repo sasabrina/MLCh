@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import HistoryContext from "../../context/historyContext";
-import ProductsList from "../../components/productsList";
-import Modal from "../../components/modal";
-import ModalHistory from "../../components/modalHistory";
+import HistoryContext from "context/historyContext";
+import ProductsList from "components/productsList";
+import Modal from "components/modal";
+import ModalHistory from "components/modalHistory";
 import "./History.scss";
 
 function History() {
@@ -14,6 +14,7 @@ function History() {
     handleClose();
   };
 
+  // Modal handlers
   const handleOpen = () => setOpenModal(true);
   const handleClose = () => setOpenModal(false);
 

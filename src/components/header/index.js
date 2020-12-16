@@ -1,10 +1,14 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import "./Header.scss";
-import ItemsContext from "../../context/itemsContext";
-import SearchBar from "../searchBar";
-import HeaderCategories from "../headerCategories";
 import Grid from "@material-ui/core/Grid";
+import ItemsContext from "context/itemsContext";
+import { SearchBar, HeaderCategories } from "components";
+import "./Header.scss";
+
+/*
+ * Renders the searchbar and the headers categories.
+ * Logo image links to root route.
+ */
 
 const Header = () => {
   const {

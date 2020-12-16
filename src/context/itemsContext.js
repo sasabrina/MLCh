@@ -1,6 +1,11 @@
 import React, { useState, useEffect, createContext } from "react";
-import useFetch from "../hooks/useFetch";
-// import useSearch from "../hooks/useSearch";
+import useFetch from "hooks/useFetch";
+
+/**
+ * fetches and provides data from the json file.
+ *
+ * note: search items could be another context
+ */
 
 const ItemsContext = createContext();
 

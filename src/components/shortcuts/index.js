@@ -1,9 +1,14 @@
 import React, { useContext } from "react";
-import ItemsContext from "../../context/itemsContext";
 import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
-import ShortcutItem from "../../components/shortcutItem";
+import ItemsContext from "context/itemsContext";
+import { ShortcutItem } from "components";
 import "./Shortcuts.scss";
+
+/**
+ * Renders a list of shortcuts.
+ * Shortcuts dont filter *yet*
+ */
 
 const Shortcuts = () => {
   const { state } = useContext(ItemsContext);

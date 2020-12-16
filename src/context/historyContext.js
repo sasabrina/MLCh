@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
-import useArray from "../hooks/useArray";
+import useArray from "hooks/useArray";
 const HistoryContext = createContext();
 
 const HistoryProvider = ({ children }) => {

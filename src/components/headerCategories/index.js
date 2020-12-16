@@ -1,6 +1,6 @@
 import React, { useContext, useState, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
-import ItemsContext from "../../context/itemsContext";
+import ItemsContext from "context/itemsContext";
 import "./HeaderCategories.scss";
 
 const HeaderCategories = () => {

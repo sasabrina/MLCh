@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import ItemsContext from "../../context/itemsContext";
-import ProductsList from "../../components/productsList";
+import ItemsContext from "context/itemsContext";
+import ProductsList from "components/productsList";
 import "./Deals.scss";
 
 const Main = () => {

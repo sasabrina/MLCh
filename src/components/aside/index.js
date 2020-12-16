@@ -1,10 +1,15 @@
 import React, { useContext } from "react";
-import ItemsContext from "../../context/itemsContext";
+import ItemsContext from "context/itemsContext";
 import "./Aside.scss";
+
+/*
+ * Renders a list with the available filters.
+ * It's imported in App.js and rendered in "Deals" and "SearchResults" views.
+ */
 
 const Aside = () => {
   const { state, totalItems } = useContext(ItemsContext);
-  const { items, available_filters } = state;
+  const { available_filters } = state;
 
   return (
     <>

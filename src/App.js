@@ -8,13 +8,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
-import Header from "./components/header";
-import Shortcuts from "./components/shortcuts";
-import Aside from "./components/aside";
-import Deals from "./pages/deals";
-import SearchResults from "./pages/searchResults";
-import History from "./pages/history";
-import Footer from "./components/footer";
+import { Header, Aside, Shortcuts, Footer } from "./components";
+import { Deals, SearchResults, History } from "./pages";
 import "./App.scss";
 
 export default function App() {

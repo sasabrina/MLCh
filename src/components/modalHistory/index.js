@@ -2,6 +2,10 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import "./ModalHistory.scss";
 
+/*
+ * Asks the user for confirmation to delete the history record.
+ */
+
 function ModalHistory({ onDelete, close }) {
   return (
     <div className="history-modal-container">
@@ -12,6 +16,7 @@ function ModalHistory({ onDelete, close }) {
         <Button variant="contained" className="btn-confirm" onClick={onDelete}>
           Eliminar historial
         </Button>
+
         <Button className="btn-cancel" onClick={close}>
           Cancelar
         </Button>
