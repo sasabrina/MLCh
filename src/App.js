@@ -14,6 +14,7 @@ import Aside from "./components/aside";
 import Deals from "./pages/deals";
 import SearchResults from "./pages/searchResults";
 import History from "./pages/history";
+import Footer from "./components/footer";
 import "./App.scss";
 
 export default function App() {
@@ -43,6 +44,7 @@ export default function App() {
               </Grid>
             </main>
           </Switch>
+          <Footer />
         </Router>
       </HistoryProvider>
     </ItemsProvider>
