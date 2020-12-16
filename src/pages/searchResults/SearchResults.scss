@@ -1,2 +1,32 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
+
+.search-section {
+  .no-results-container {
+    min-height: 204px;
+    width: 700px;
+    margin: 48px auto;
+    padding: 42px 40px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    h2 {
+      font-size: $fs-lg;
+    }
+    ul {
+      margin: 18px 10px 10px 0;
+
+      li {
+        list-style-position: inside;
+        font-family: $ff-main-light;
+        span {
+          font-family: $ff-main-semibold;
+        }
+
+        a {
+          @include clean-links($p-blue);
+        }
+      }
+    }
+  }
+}

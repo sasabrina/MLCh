@@ -1,22 +1,26 @@
 @import "../../styles/_variables";
 @import "../../styles/_mixins";
 
-.footer-container {
-  height: 90px;
-  padding: 16px 10px;
-  background-color: #fff;
-  font-size: $fs-subtitle;
-  text-align: center;
+footer {
+  margin-top: 45px;
 
-  p i {
-    vertical-align: middle;
-  }
+  .footer-container {
+    height: 90px;
+    padding: 16px 10px;
+    background-color: #fff;
+    font-size: $fs-subtitle;
+    text-align: center;
 
-  .footer-links {
-    a {
-      @include clean-links($p-text);
-      font-size: $fs-lg;
-      margin-right: 10px;
+    p i {
+      vertical-align: middle;
+    }
+
+    .footer-links {
+      a {
+        @include clean-links($p-text);
+        font-size: $fs-lg;
+        margin-right: 10px;
+      }
     }
   }
 }

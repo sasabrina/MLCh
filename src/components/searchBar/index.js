@@ -11,7 +11,6 @@ const SearchBar = () => {
 
   const handleInput = (e) => {
     setValue(e.target.value);
-    console.log(e.target.value);
   };
 
   const onEnter = (e) => {

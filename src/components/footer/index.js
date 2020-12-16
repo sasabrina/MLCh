@@ -6,16 +6,16 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <p>
-          Hecho con <i class="devicon-react-original colored"></i> por Sabrina
-          Alvarez
+          Hecho con <i className="devicon-react-original colored"></i> por
+          Sabrina Alvarez
         </p>
 
         <div className="footer-links">
           <a href="https://github.com/sasabrina">
-            <i class="devicon-github-original colored"></i>
+            <i className="devicon-github-original colored"></i>
           </a>
           <a href="https://www.linkedin.com/in/sabrina-alvarez">
-            <i class="devicon-linkedin-plain colored"></i>
+            <i className="devicon-linkedin-plain colored"></i>
           </a>
         </div>
       </div>
